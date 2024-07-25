@@ -1,0 +1,188 @@
+body {
+    /* Set the initial background color/image */
+    background-color: #ff0a0a; /* Example background color */
+    background-image: url('background-image.jpg'); /* Example background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden; /* Ensures the animation doesn't overflow */
+    cursor: crosshair;
+}
+
+@keyframes animatedBackground {
+    0% {
+        background-color: #00eeff; /* Starting background color */
+        background-position: center top;
+    }
+    50% {
+        background-color: #ffa3a3; /* Midway background color */
+        background-position: center center;
+    }
+    100% {
+        background-color: #29ffbf; /* Ending background color (same as start) */
+        background-position: center bottom;
+    }
+}
+
+body {
+    animation: animatedBackground 10s ease infinite;
+}
+.container {
+    background: rgb(255, 255, 255);
+    color: rgb(19, 19, 19);
+    text-align: center;
+    width: 25%;
+    padding: 16px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 26px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0,0.1);
+}
+/* .container input[type=submit] {
+    background: rgb(42, 117, 255);
+    cursor: pointer;
+    padding: 15px;
+    width: 100px;
+    border:0;
+    color: white;
+} */
+.container input[type=reset] {
+    background: rgb(255, 42, 42);
+    cursor: pointer;
+    padding: 15px;
+    width: 100px;
+    border:0;
+    color: white;
+}
+.container input[type="username"], 
+textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%; 
+    font-size: 14px;
+}
+.container input[type="username"]:focus, 
+textarea:focus {
+    border-color: #3a9200; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(52, 97, 0, 0.5); 
+}
+.container input[type="username"]:disabled, 
+textarea:disabled {
+    background-color: #f0f0f0; 
+    color: #666; 
+}
+.container input[type="lastname"], 
+textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%; 
+    font-size: 14px;
+}
+.container input[type="lastname"]:focus, 
+textarea:focus {
+    border-color: #3a9200; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(52, 97, 0, 0.5); 
+}
+.container input[type="lastname"]:disabled, 
+textarea:disabled {
+    background-color: #f0f0f0; 
+    color: #666; 
+}
+.container input[type="email"], 
+textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%; 
+    font-size: 14px;
+}
+.container input[type="email"]:focus, 
+textarea:focus {
+    border-color: #3a9200; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(52, 97, 0, 0.5); 
+}
+.container input[type="email"]:disabled, 
+textarea:disabled {
+    background-color: #f0f0f0; 
+    color: #666; 
+}
+
+.container input[type="password"], 
+textarea {
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    width: 100%; 
+    font-size: 14px;
+}
+.container input[type="password"]:focus, 
+textarea:focus {
+    border-color: #3a9200; 
+    outline: none; 
+    box-shadow: 0 0 5px rgba(52, 97, 0, 0.5); 
+}
+.container input[type="password"]:disabled, 
+textarea:disabled {
+    background-color: #f0f0f0; 
+    color: #666; 
+}
+.container input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+.container input[type="submit"]:hover {
+    background-color: #00346b; 
+    transition: 0.5s;
+}
+
+
+.container input[type="submit"]:focus {
+    outline: none; 
+    box-shadow: 0 0 5px rgba(0,123,255,0.5);
+}
+
+.container input[type="reset"] {
+    padding: 10px 20px;
+    background-color: #ff0000; 
+    color: #fff; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Style when the submit button is hovered */
+.container input[type="reset"]:hover {
+    background-color: #b30000;
+    transition: 0.5s;
+}
+
+/* Style when the submit button is focused */
+.container input[type="reset"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+}
+
+
+
